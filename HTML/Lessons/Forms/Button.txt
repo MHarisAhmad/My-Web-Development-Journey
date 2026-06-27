@@ -1,0 +1,71 @@
+==============================
+     BUTTONS IN HTML
+==============================
+
+--------------
+ WHAT IS A BUTTON?
+--------------
+- <button> triggers an action when clicked
+- Has opening and closing tags — content goes in between
+- <button>Click Me</button>
+- type attribute controls what the button DOES when clicked
+
+--------------
+ 3 VALUES OF type
+--------------
+- type="button"  → does nothing by default, needs JavaScript to work
+- type="submit"  → submits the form data to the server
+- type="reset"   → clears ALL input fields in the form
+
+--------------
+ type="button"
+--------------
+- Default behavior: nothing
+- Needs JS to be useful (e.g. show alerts, open menus, toggle things)
+- <button type="button">Show Alert</button>
+
+--------------
+ type="submit"
+--------------
+- Sends form data to the URL in the form's action attribute
+- Must be INSIDE a <form> to work
+- <button type="submit">Submit</button>
+
+--------------
+ type="reset"
+--------------
+- Clears all fields in the form instantly
+- ⚠ Bad practice — users can accidentally wipe their data
+- Avoid using it unless absolutely necessary
+
+--------------
+ BUTTON VIA <input> ELEMENT
+--------------
+- <input> can also act as a button using type="button", "submit", or "reset"
+- Text is set via the value attribute (not between tags)
+- <input type="button" value="Start Game" />
+
+--------------
+ <button> vs <input type="button"> — COMPARISON
+--------------
+- <input>  → void element, no closing tag, text via value only
+- <button> → has closing tag, can nest text + images + icons inside
+- <button> is more flexible and preferred in modern HTML
+
+--------------
+ KEY POINTS
+--------------
+- Always set type on a button — skipping it can cause unexpected behavior
+- type="reset" is usually a bad idea — avoid it
+- <button> is preferred over <input> for buttons
+- Avoid too many buttons in a form — clutters the UI
+
+--------------
+ QUICK RECAP
+--------------
+- button       → element that triggers actions when clicked
+- type="button"→ does nothing alone, requires JavaScript
+- type="submit"→ submits form data to the server
+- type="reset" → clears all form fields (avoid using)
+- input button → void element, text set via value attribute
+- button wins  → more flexible, supports nested content
